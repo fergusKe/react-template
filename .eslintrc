@@ -49,6 +49,10 @@
     "no-undef": "off",
     "react/no-string-refs": "off",
     "react/prop-types": "off",
-    "prefer-destructuring": "off"
+    "prefer-destructuring": "off",
+    "react/jsx-indent": "off",
+    "no-return-assign": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "off"
   }
 }
