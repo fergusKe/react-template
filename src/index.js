@@ -2,25 +2,25 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
 
-import App from './components/App';
+import Main from './containers';
 
 import './index.css';
 import './css/base.scss';
 
 
-const render = (Component) => {
+const render = () => {
   ReactDOM.render(
     <AppContainer>
-      <Component />
+      <Main />
     </AppContainer>,
     document.getElementById('root'),
   );
 };
 
-render(App);
+render();
 
 if (module.hot) {
-  module.hot.accept('./components/App', () => {
-    render(App);
+  module.hot.accept('./containers', () => {
+    render();
   });
 }
